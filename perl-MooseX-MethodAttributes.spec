@@ -8,18 +8,18 @@
 Summary:	code attribute introspection
 Summary(pl.UTF-8):	analiza kodu atrybutów
 Name:		perl-MooseX-MethodAttributes
-Version:	0.15
+Version:	0.18
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	c89f2e09781bae3ea17f4421d5c6097b
+# Source0-md5:	7202f1a4bffe36776d16f13130a52cfa
 URL:		http://search.cpan.org/dist/MooseX-MethodAttributes/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(MooseX::Types) >= 0.06
+BuildRequires:	perl(MooseX::Types) >= 0.20
 BuildRequires:	perl-Moose >= 0.79
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-namespace-clean
