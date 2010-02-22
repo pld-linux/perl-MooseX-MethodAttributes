@@ -22,6 +22,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl(MooseX::Types) >= 0.20
 BuildRequires:	perl-Moose >= 0.79
 BuildRequires:	perl-Test-Exception
+BuildRequires:	perl-namespace-autoclean
 BuildRequires:	perl-namespace-clean
 %endif
 BuildArch:	noarch
