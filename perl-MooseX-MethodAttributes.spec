@@ -8,22 +8,22 @@
 Summary:	code attribute introspection
 Summary(pl.UTF-8):	analiza kodu atrybutów
 Name:		perl-MooseX-MethodAttributes
-Version:	0.20
+Version:	0.26
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/CPAN/authors/id/B/BO/BOBTFISH/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	39711fc1fbd4c0091811c2e585378b0e
+Source0:	http://www.cpan.org/modules/by-module/MooseX/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	556fa58ae5b0cd2e150cc9075efc7460
 URL:		http://search.cpan.org/dist/MooseX-MethodAttributes/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(MooseX::Types) >= 0.20
-BuildRequires:	perl-Moose >= 0.79
+BuildRequires:	perl(MooseX::Types) >= 0.21
+BuildRequires:	perl-Moose >= 0.99
 BuildRequires:	perl-Test-Exception
 BuildRequires:	perl-namespace-autoclean
-BuildRequires:	perl-namespace-clean
+BuildRequires:	perl-namespace-clean => 0.10
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
